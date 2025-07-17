@@ -1,0 +1,48 @@
+/* base.css: custom property, reset, dan base style */
+
+:root {
+  /* colors */
+  --bg-gradient-onyx: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+  --bg-gradient-jet: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+  --bg-gradient-yellow-1: linear-gradient(135deg, #ffd700 0%, #ffed4e 50%, #fff200 100%);
+  --bg-gradient-yellow-2: linear-gradient(135deg, rgba(255,215,0,0.2) 0%, rgba(255,237,78,0.1) 100%);
+  --border-gradient-onyx: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.1) 100%);
+  --text-gradient-yellow: linear-gradient(135deg, #ffd700 0%, #ffed4e 50%, #fff200 100%);
+  --jet: rgba(0,0,0,0.3);
+  --onyx: rgba(0,0,0,0.2);
+  --eerie-black-1: rgba(0,0,0,0.1);
+  --eerie-black-2: rgba(0,0,0,0.15);
+  --smoky-black: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --white-1: rgba(255,255,255,0.95);
+  --white-2: rgba(255,255,255,0.9);
+  --orange-yellow-crayola: #ffd700;
+  --vegas-gold: #ffed4e;
+  --light-gray: rgba(255,255,255,0.8);
+  --light-gray-70: rgba(255,255,255,0.7);
+  --bittersweet-shimmer: #ff6b6b;
+  /* typography */
+  --ff-poppins: 'Poppins', sans-serif;
+  --fs-1: 24px; --fs-2: 18px; --fs-3: 17px; --fs-4: 16px; --fs-5: 15px; --fs-6: 14px; --fs-7: 13px; --fs-8: 11px;
+  --fw-300: 300; --fw-400: 400; --fw-500: 500; --fw-600: 600;
+  /* shadow */
+  --shadow-1: 0 8px 32px rgba(0,0,0,0.1);
+  --shadow-2: 0 16px 40px rgba(0,0,0,0.15);
+  --shadow-3: 0 20px 50px rgba(0,0,0,0.2);
+  --shadow-4: 0 25px 60px rgba(0,0,0,0.25);
+  --shadow-5: 0 30px 80px rgba(0,0,0,0.3);
+  /* transition */
+  --transition-1: 0.3s cubic-bezier(0.4,0,0.2,1);
+  --transition-2: 0.6s cubic-bezier(0.4,0,0.2,1);
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+a { text-decoration: none; }
+li { list-style: none; }
+img, ion-icon, a, button, time, span { display: block; }
+button { font: inherit; background: none; border: none; text-align: left; cursor: pointer; }
+input, textarea { display: block; width: 100%; background: none; font: inherit; }
+::selection { background: var(--orange-yellow-crayola); color: var(--smoky-black); }
+:focus { outline-color: var(--orange-yellow-crayola); }
+html { font-family: var(--ff-poppins); }
+body { background: var(--smoky-black); min-height: 100vh; position: relative; overflow-x: hidden; opacity: 0; transition: opacity 0.6s ease; }
+body.loaded { opacity: 1; } 
