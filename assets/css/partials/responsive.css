@@ -518,7 +518,8 @@
   .sidebar-info, .sidebar-info_more {
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+    margin-top: 10px;
   }
   .info-content .name, .info-content .title {
     text-align: center;

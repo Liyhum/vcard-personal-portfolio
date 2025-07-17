@@ -223,3 +223,35 @@ body, .sidebar, .main-content {
     font-size: 1.1em;
   }
 }
+
+.dark .icon-box {
+  background: #23395d !important;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(35,57,93,0.10);
+  transition: background 0.3s, color 0.3s;
+}
+.dark .icon-box ion-icon {
+  color: #fff !important;
+}
+
+/* Navbar active link color */
+.navbar-link.active {
+  background: var(--bg-gradient-yellow-1);
+  color: var(--smoky-black);
+  transition: background 0.3s, color 0.3s;
+}
+.dark .navbar-link.active {
+  background: #23395d;
+  color: #fff;
+}
+
+.dark .social-link {
+  background: #23395d !important;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(35,57,93,0.10);
+  transition: background 0.3s, color 0.3s;
+}
+.dark .social-link:hover {
+  background: #406080 !important;
+  color: #ffd700 !important;
+}

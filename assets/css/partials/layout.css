@@ -53,7 +53,7 @@ main {
   .main-content {
     grid-column: 1;
   }
-  .sidebar.active { max-height: 405px; }
+  .sidebar.active { max-height: 460px; }
 }
 
 .sidebar-info {
